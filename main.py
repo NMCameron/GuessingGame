@@ -13,9 +13,10 @@ guessed = False
 while int(guessed) == False:
     guess = input("Guess an odd number 1-1000: ")
     if int(guess) == answer:
-        print("Congrats! You guessed ")
+        print("\nCongrats! You guessed the number! (", answer, ")")
+        print("Thanks for playing!")
         guessed = True
     elif int(guess) < answer:
-        print(guess, "is less than the number")
+        print(guess, "is less than the number \n")
     else:
-        print(guess, "is bigger than the number")
+        print(guess, "is bigger than the number\n")
